@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #f4f5f8;
+  font-family: "Asap", sans-serif;
+}
+
+.sidebar {
+  box-shadow: 0px 10px 40px rgba(204, 208, 219, 0.5);
+}
+
+.sidebar-items .active {
+  background: linear-gradient(135deg, #f98443 0%, #f84775 100%);
+  box-shadow: 0px 10px 30px rgba(239, 132, 121, 0.520494);
+}
+.sub-categories {
+  background: linear-gradient(135deg, #f98443 0%, #f84775 100%);
+  left: 104px;
+}
+
+.grey-text {
+  color: #fdc8b9;
+}
+.subcategory-active-bg {
+  background-color: #ffffff25;
+  /* box-shadow: 0px 10px 30px rgba(239, 132, 121, 0.520494); */
+}
+
+.dashboard-container {
+  height: 100vh;
+  /* width: calc(100vw-128px); */
+}
+.user-profile {
+  background: linear-gradient(135deg, #f98443 0%, #f84775 100%);
+}
+.items {
+  gap: 3%;
+}
+.items .card {
+  width: 30%;
+}
+.green-bg {
+  background: #24b056;
+}
+
+.items .card:hover {
+  box-sizing: border-box;
+  border-color: #f85b64;
+}
+
+.card .price,
+.cart-top {
+  background: linear-gradient(135deg, #f98443 0%, #f84775 100%);
+}
+.cart .cart-top p {
+  opacity: 0.65;
+}
+
+.cart-content input,
+.red-border {
+  border-color: #f85d62;
+}
+
+.red-text {
+  color: #f85d62;
+}
+
+.transition-apply {
+  transition: 2s;
+}
+
+/* Keyframes for fade-in effect */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.75s ease forwards;
+}
